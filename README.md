@@ -21,7 +21,7 @@ The **users-api** is a directory that contains the backend application, and the 
 
 ### Module 1 - create a backend API application
 
-Atthach to the GitHub Copilot Agent Mode the following files to run this command below:
+Attach to the GitHub Copilot Agent Mode the following files to run this command below:
 
 - `.github/instructions/root-path.instructions.md`
 - `.github/instructions/backend-application.instructions.md`
