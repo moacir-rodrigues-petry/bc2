@@ -48,10 +48,67 @@ Atthach to the GitHub Copilot Agent Mode the following files to run this command
 
 ---
 
+---
+
 ##### Module 3 - Implementing Automated Test Coverage
 
-TBD
+After the backend and frontend applications are created, you can implement a comprehensive testing setup for the users-api backend application using Jest and Supertest.
+
+Just use this prompt to the GitHub Copilot Agent Mode:
+
+```
+Create a comprehensive testing setup for the users-api backend application using Jest and Supertest. Implement the following:
+
+1. Configure Jest with TypeScript support using ts-jest
+2. Create test files for the existing API endpoints in the users-api
+3. Write tests that verify:
+   - The users endpoint returns the correct number of users
+   - The returned users match the expected interface
+   - Error handling works properly
+   - HTTP status codes are correct
+
+Include proper test organization with describe/it blocks and implement both unit tests and integration tests. Make sure the tests follow best practices like proper setup and teardown. Update the package.json with appropriate test scripts.
+```
+
+###### Testing Documentation
+
+The users-api backend application now includes a comprehensive testing setup using Jest and Supertest. The testing infrastructure includes:
+
+1. **Unit Tests**: Tests for individual components like services and controllers
+2. **Integration Tests**: Tests for API endpoints and error handling
+3. **Test Coverage Reports**: Automatically generated reports to ensure high code coverage
+
+To run the tests:
+
+```bash
+cd users-api
+npm test               # Run all tests
+npm run test:watch     # Run tests in watch mode
+npm run test:coverage  # Generate coverage report
+npm run test:ci        # Run tests in CI mode
+```
+
+The test setup follows best practices:
+
+- Proper use of describe/it blocks for test organization
+- Mocking of dependencies for isolated unit testing
+- Comprehensive test coverage for all components
+- Test setup and teardown hooks
 
 ##### Module 4 - Implementing GitHub Actions
 
-TBD
+Let's start from the basics, ask the GitHub Copilot Agent Mode:
+
+```
+How does GitHub Actions works?
+```
+
+If the response provides a good example, save it up into the `.github/workflows/ci-test.yml` file.
+
+Now, ask the GitHub Copilot Agent Mode to create a GitHub Actions workflow for the backend application:
+
+```
+Update the ci-test.yml file to reflect the backend app test
+```
+
+With that being created, push the code to the repository and check the Actions tab in your GitHub repository to see the workflow running.
