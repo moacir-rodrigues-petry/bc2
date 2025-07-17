@@ -19,7 +19,7 @@ The **users-api** is a directory that contains the backend application, and the 
 
 ---
 
-#### Module 1 - create a backend API application
+### Module 1 - create a backend API application
 
 Atthach to the GitHub Copilot Agent Mode the following files to run this command below:
 
@@ -27,18 +27,22 @@ Atthach to the GitHub Copilot Agent Mode the following files to run this command
 - `.github/instructions/backend-application.instructions.md`
 - `.github/instructions/backend-structure.instructions.md`
 
-`Create a backend API application using Express.js and TypeScript. Use the @faker-js/faker library to generate mock data and ts-node-dev to run the app. Implement a route at /api/users that responds with a JSON array of 10 fake users. Each user should have the following fields: id, name, username, email, and role. Organize the project using TypeScript best practices, including type definitions and modular structure. Use CORS middleware to allow requests from http://localhost:3001.`
+```
+Create a backend API application using Express.js and TypeScript. Use the @faker-js/faker library to generate mock data and ts-node-dev to run the app. Implement a route at /api/users that responds with a JSON array of 10 fake users. Each user should have the following fields: id, name, username, email, and role. Organize the project using TypeScript best practices, including type definitions and modular structure. Use CORS middleware to allow requests from http://localhost:3001.
+```
 
 ---
 
-##### Module 2 - create a frontend application
+### Module 2 - create a frontend application
 
 Atthach to the GitHub Copilot Agent Mode the following files to run this command below:
 
 - `.github/instructions/root-path.instructions.md`
 - `.github/instructions/frontend-application.instructions.md`
 
-`Create a React.js frontend application using TypeScript that runs on port 3001 and fetches user data from http://localhost:3000/api/users. Define a User interface that reflects the backend data structure, and organize the project with a modular folder structure, including separate directories for components and types. Ensure the application includes proper error handling and loading states to deliver a smooth and reliable user experience. Use beautiful and modern CSS for styling to create a clean, responsive, and modern UI.`
+```
+Create a React.js frontend application using TypeScript that runs on port 3001 and fetches user data from http://localhost:3000/api/users. Define a User interface that reflects the backend data structure, and organize the project with a modular folder structure, including separate directories for components and types. Ensure the application includes proper error handling and loading states to deliver a smooth and reliable user experience. Use beautiful and modern CSS for styling to create a clean, responsive, and modern UI.
+```
 
 ---
 
@@ -48,9 +52,7 @@ Atthach to the GitHub Copilot Agent Mode the following files to run this command
 
 ---
 
----
-
-##### Module 3 - Implementing Automated Test Coverage
+### Module 3 - Implementing Automated Test Coverage
 
 After the backend and frontend applications are created, you can implement a comprehensive testing setup for the users-api backend application using Jest and Supertest.
 
@@ -70,32 +72,7 @@ Create a comprehensive testing setup for the users-api backend application using
 Include proper test organization with describe/it blocks and implement both unit tests and integration tests. Make sure the tests follow best practices like proper setup and teardown. Update the package.json with appropriate test scripts.
 ```
 
-###### Testing Documentation
-
-The users-api backend application now includes a comprehensive testing setup using Jest and Supertest. The testing infrastructure includes:
-
-1. **Unit Tests**: Tests for individual components like services and controllers
-2. **Integration Tests**: Tests for API endpoints and error handling
-3. **Test Coverage Reports**: Automatically generated reports to ensure high code coverage
-
-To run the tests:
-
-```bash
-cd users-api
-npm test               # Run all tests
-npm run test:watch     # Run tests in watch mode
-npm run test:coverage  # Generate coverage report
-npm run test:ci        # Run tests in CI mode
-```
-
-The test setup follows best practices:
-
-- Proper use of describe/it blocks for test organization
-- Mocking of dependencies for isolated unit testing
-- Comprehensive test coverage for all components
-- Test setup and teardown hooks
-
-##### Module 4 - Implementing GitHub Actions
+### Module 4 - Implementing GitHub Actions
 
 Let's start from the basics, ask the GitHub Copilot Agent Mode:
 
