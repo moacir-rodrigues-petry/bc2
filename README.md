@@ -8,6 +8,8 @@ This repo is split in a backend application and a frontend application. The back
 
 The **users-api** is a directory that contains the backend application, and the **users-frontend** is a directory that contains the frontend application.
 
+> ⚠️ **Note:** The **users-api** and **users-frontend** directories do not exist yet. You will create these directories as you follow the steps outlined in the module instructions below.
+
 ### Requirements
 
 - **Node.js**: Ensure you have Node.js installed on your machine.
@@ -15,7 +17,9 @@ The **users-api** is a directory that contains the backend application, and the 
 - **Express.js**: The backend uses Express.js to create a RESTful API.
 - **React.js**: The frontend is built using React.js.
 
-#### Module 1
+---
+
+#### Module 1 - create a backend API application
 
 Atthach to the GitHub Copilot Agent Mode the following files to run this command below:
 
@@ -25,7 +29,9 @@ Atthach to the GitHub Copilot Agent Mode the following files to run this command
 
 `Create a backend API application using Express.js and TypeScript. Use the @faker-js/faker library to generate mock data and ts-node-dev to run the app. Implement a route at /api/users that responds with a JSON array of 10 fake users. Each user should have the following fields: id, name, username, email, and role. Organize the project using TypeScript best practices, including type definitions and modular structure. Use CORS middleware to allow requests from http://localhost:3001.`
 
-##### Module 2
+---
+
+##### Module 2 - create a frontend application
 
 Atthach to the GitHub Copilot Agent Mode the following files to run this command below:
 
@@ -36,6 +42,16 @@ Atthach to the GitHub Copilot Agent Mode the following files to run this command
 
 ---
 
-🚨 **Note:** Facing any issues during the process, try to understand what Copilot is struggling with and provide it with the necessary context. If you are still facing issues, please reach out to the team for assistance.
+#### Getting Help
+
+🚨 **Note:** If you encounter any issues during the setup or development process, first review the instructions and ensure all required files are attached to the Copilot Agent Mode. If Copilot is not providing the expected results, try to clarify your request or provide additional context. For persistent problems, don't hesitate to reach out to the team for support.
 
 ---
+
+##### Module 3 - Implementing Automated Test Coverage
+
+TBD
+
+##### Module 4 - Implementing GitHub Actions
+
+TBD
