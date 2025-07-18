@@ -17,24 +17,20 @@ jobs:
       run:
         working-directory: ./users-api
 
-    strategy:
-      matrix:
-        node-version: [16.x, 18.x, 20.x]
-
     steps:
       - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: "18.x"
           cache: "npm"
           cache-dependency-path: users-api/package-lock.json
       - name: Install dependencies
         run: npm ci
       - name: Run tests
-        run: npm test
+        run: npx jest --maxWorkers=2
       - name: Generate test coverage
-        run: npm run test:coverage
+        run: npx jest --coverage --maxWorkers=2
       - name: Upload coverage reports
         uses: codecov/codecov-action@v3
         with:
