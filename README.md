@@ -74,10 +74,24 @@ Include proper test organization with describe/it blocks and implement both unit
 
 ### Module 4 - Implementing GitHub Actions
 
-Let's start from the basics, ask the GitHub Copilot Agent Mode:
+Before implementing GitHub Actions, create a GitHub repository. Now open the terminal in this root directory and run the following command to add a remote repository: `git remote add 201-session https://github.com/user/repo-created.git`
+
+List the remote repositories to ensure the remote repository is added correctly:
+
+```bash
+git remote -v
+```
+
+Before we push the code to the remote repository, let's use the GitHub Copilot Commit Message Generate resource. Add all files/folders created from users-api and users-frontend directories. Go to the Source Control tab in your IDE and click on the "Generate Commit Message with Copilot" button. Right away, Copilot will generate a commit message for you. Review the message and click on the "Commit" button 🎉
+
+Push the code to the remote repository: `git push -u 201-session main`
+
+Now, let's start from the basics, ask the GitHub Copilot Agent Mode:
 
 ```
+
 How does GitHub Actions works?
+
 ```
 
 If the response provides a good example, save it up into the `.github/workflows/ci-test.yml` file.
@@ -85,7 +99,13 @@ If the response provides a good example, save it up into the `.github/workflows/
 Now, ask the GitHub Copilot Agent Mode to create a GitHub Actions workflow for the backend application:
 
 ```
+
 Update the ci-test.yml file to reflect the backend app test
+
 ```
 
 With that being created, push the code to the repository and check the Actions tab in your GitHub repository to see the workflow running.
+
+```
+
+```
