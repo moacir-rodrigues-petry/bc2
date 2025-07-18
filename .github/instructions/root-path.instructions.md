@@ -4,14 +4,14 @@ applyTo: "**"
 
 # Root path for this project
 
-Root path for this project is `~/ModusCreate/copilot-agent-mode`.
+Root path for this project is `~/ModusCreate/201-v2-wip`.
 
 Make sure to run all commands from the root directory of the project and add the entire path when executing commands that require a path or subdirectory.
 
 Example: when using the terminal, run commands like this:
 
 ```bash
-cd ~/ModusCreate/copilot-agent-mode/users-api && npm install
+cd ~/ModusCreate/201-v2-wip/users-api && npm install
 ```
 
 Instead of:
